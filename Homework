@@ -1,0 +1,25 @@
+Write tests for demo-testing-project.
+
+Requirements:
+
+* Add tests for all components.
+* Reminders:
+** use real data (e.g. Faker);
+** black box testing;
+** create different parameter value combinations;
+** test errors/exceptions.
+* Final coverage should be at least 80% for each component.
+* Lint your tests.
+
+Resources:
+
+* Vue Test Utils: https://vue-test-utils.vuejs.org/
+* Mocha: https://mochajs.org/
+* Instanbul/Nyc: https://istanbul.js.org/
+* Faker: https://www.npmjs.com/package/Faker
+* Stryker: https://stryker-mutator.io/
+* Sinon: https://sinonjs.org/
+
+Bonus:
+
+* Add mutation testing.
