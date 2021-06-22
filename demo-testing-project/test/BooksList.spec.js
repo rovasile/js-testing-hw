@@ -17,5 +17,11 @@ describe('List.vue', () => {
         });
         expect(wrapper.findAll({name: 'Book'})).toHaveLength(Books.length);
     })
+
+    it('Check if Book can be initialized without propsData', () => {
+        
+        const wrapper = shallowMount(List, {propsData: {}});
+        expect(wrapper.findAll({name: 'Book'})).toHaveLength(0);
+    });
 })
 

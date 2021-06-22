@@ -39,5 +39,25 @@ describe('Book.vue', () => {
             }
         }).toThrow());
     });
+    //todo error if author missing, if id missing, 
+    it('should throw error if ID is missing', () => {
+        expect(() => shallowMount(Book, {
+            propsData: {
+                author: faker.name.findName(),
+                name: faker.name.title(),
+            }
+        }).toThrow(`[Vue warn]: Missing required prop: "id"`));
+    });
+
+    it('should throw error if author is missing', () => {
+        expect(() => shallowMount(Book, {
+            propsData: {
+                name: faker.name.title(),
+                id: faker.datatype.number(),
+            }
+        }).toThrow(`[Vue warn]: Missing required prop: "author"`));
+    });
+
+
 })
 
